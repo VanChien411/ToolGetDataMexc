@@ -269,7 +269,8 @@
             background: rgba(40, 167, 69, 0.1);
             border-radius: 10px;
             border: 1px solid rgba(40, 167, 69, 0.2);
-            margin-left: auto; /* đẩy sang phải */
+            margin-left: auto;
+            /* đẩy sang phải */
         }
 
         .auto-refresh input[type="checkbox"] {
@@ -433,6 +434,20 @@
                 position: static;
                 max-height: none;
             }
+
+            .advice-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .advice-options {
+                padding: 15px;
+            }
+
+            .control-group input,
+            .control-group select {
+                width: 100%;
+            }
+
         }
     </style>
 </head>
@@ -502,7 +517,7 @@
                     </select>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="status" id="status"></div>
